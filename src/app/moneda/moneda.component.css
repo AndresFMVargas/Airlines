@@ -1,0 +1,40 @@
+.header {
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    margin: 0 auto;
+    max-width: 1140px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-content {
+    padding-top: 30px;
+    width: 100%;
+}
+
+.input-section {
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.select-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+.select-box {
+    flex: 1 0 50%;
+    margin-right: 15px;
+}
+
+.result {
+    margin-top: 20px;
+    text-align: center;
+}

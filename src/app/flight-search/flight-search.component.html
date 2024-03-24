@@ -1,0 +1,47 @@
+<div class="wrap" data-pos="0">
+    <div class="content">
+        <!-- Formulario de búsqueda de vuelos -->
+        <form class="flight-search-form">
+            <div class="form-group">
+                <!-- Origen -->
+                <div class="control select">
+                    <div class="control-head">
+                        <i class="zmdi zmdi-flight-takeoff"></i>
+                        <span class="close"><i class="zmdi zmdi-close"></i></span>
+                        <div>
+                            <h4>Origen y destino  </h4>
+                            <mat-form-field>
+                              <mat-label>Ciudad de Origen</mat-label>
+                              <mat-select [(ngModel)]="selectedOrigin" name="originCity">
+                                <mat-option *ngFor="let city of cities" [value]="city.value[0]">
+                                  {{ city.name }}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                            <mat-form-field>
+                              <mat-label>Ciudad de Destino</mat-label>
+                              <mat-select [(ngModel)]="selectedDestination" name="destinationCity">
+                                <mat-option *ngFor="let city of cities" [value]="city.value[0]">
+                                  {{ city.name }}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                          </div>
+                        </div>
+                </div>
+                <div class="content">
+                  </div>
+                <div>
+
+
+                </div>
+            </div>
+            <!-- Botón de búsqueda -->
+            <div class="form-group">
+                <div class="control">
+                    <button class="btnSearch">Buscar Vuelos</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
